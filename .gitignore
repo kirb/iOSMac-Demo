@@ -1,0 +1,20 @@
+# Crap
+.DS_Store
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+xcuserdata
+*.xccheckout
+*.xcuserstate
+
+# Carthage
+Carthage/
+
+# Theos
+.theos
+packages/
+
+# Repo specific
+UIKit/*.h
+UIKit/*.apinotes

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Courier</key>
+	<dict>
+		<key>Regular</key>
+		<string>Courier</string>
+		<key>Bold</key>
+		<string>Courier-Bold</string>
+	</dict>
+	<key>Courier New</key>
+	<dict>
+		<key>Regular</key>
+		<string>CourierNewPSMT</string>
+		<key>Bold</key>
+		<string>CourierNew-BoldMT</string>
+	</dict>
+	<key>Fira Code</key>
+	<dict>
+		<key>Regular</key>
+		<string>FiraCode-Retina</string>
+		<key>Bold</key>
+		<string>FiraCode-Bold</string>
+	</dict>
+	<key>Hack</key>
+	<dict>
+		<key>Regular</key>
+		<string>Hack-Regular</string>
+		<key>Bold</key>
+		<string>Hack-Bold</string>
+	</dict>
+	<key>Menlo</key>
+	<dict>
+		<key>Regular</key>
+		<string>Menlo-Regular</string>
+		<key>Bold</key>
+		<string>Menlo-Bold</string>
+	</dict>
+	<key>Source Code Pro</key>
+	<dict>
+		<key>Regular</key>
+		<string>SourceCodePro-Regular</string>
+		<key>Bold</key>
+		<string>SourceCodePro-Bold</string>
+	</dict>
+</dict>
+</plist>

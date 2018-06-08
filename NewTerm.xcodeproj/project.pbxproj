@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF061BF220C6C1B200529484 /* HBNTPTY.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BE520C6C1B100529484 /* HBNTPTY.m */; };
+		CF061BF320C6C1B200529484 /* HBNTKeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BE620C6C1B100529484 /* HBNTKeyboardButton.m */; };
+		CF061BF420C6C1B200529484 /* HBNTKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BE720C6C1B100529484 /* HBNTKeyboardToolbar.m */; };
+		CF061BF520C6C1B200529484 /* HBNTPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BEC20C6C1B200529484 /* HBNTPreferences.m */; };
+		CF061BF620C6C1B200529484 /* HBNTPreferencesRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BEF20C6C1B200529484 /* HBNTPreferencesRootController.m */; };
+		CF061BF720C6C1B200529484 /* HBNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF061BF020C6C1B200529484 /* HBNTAppDelegate.m */; };
+		CF1C07F620CA0AC200BA89EA /* UIColor+HBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C07F520CA0AC200BA89EA /* UIColor+HBAdditions.m */; };
+		CF1C07FF20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C07FC20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.m */; };
+		CF1C080020CA0AD200BA89EA /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C07FE20CA0AD200BA89EA /* UIView+CompactConstraint.m */; };
+		CF1C080320CA0B6300BA89EA /* bell-hud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080120CA0B6200BA89EA /* bell-hud@2x.png */; };
+		CF1C080420CA0B6300BA89EA /* bell-hud@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080220CA0B6200BA89EA /* bell-hud@3x.png */; };
+		CF1C080620CA0B6B00BA89EA /* Fonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080520CA0B6B00BA89EA /* Fonts.plist */; };
+		CF1C080A20CA0B7200BA89EA /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080720CA0B7200BA89EA /* settings@2x.png */; };
+		CF1C080B20CA0B7200BA89EA /* settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080820CA0B7200BA89EA /* settings@3x.png */; };
+		CF1C080C20CA0B7200BA89EA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080920CA0B7200BA89EA /* settings.png */; };
+		CF1C080E20CA0B7900BA89EA /* Themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080D20CA0B7900BA89EA /* Themes.plist */; };
+		CF1C081320CA0BF200BA89EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF1C080F20CA0BF200BA89EA /* InfoPlist.strings */; };
+		CF1C081420CA0BF200BA89EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF1C081120CA0BF200BA89EA /* Localizable.strings */; };
+		CF37BF9420C6F34E00302776 /* Main.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = CF37BF9320C6F34E00302776 /* Main.storyboardc */; };
+		CF555AC220C6C5ED0049CA19 /* FontMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555ABC20C6C5EB0049CA19 /* FontMetrics.m */; };
+		CF555AC320C6C5ED0049CA19 /* NSCharacterSet+iTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AC120C6C5ED0049CA19 /* NSCharacterSet+iTerm.m */; };
+		CF555ACA20C6C5F30049CA19 /* NSStringITerm.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AC620C6C5F20049CA19 /* NSStringITerm.m */; };
+		CF555ACB20C6C5F30049CA19 /* ScreenChar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AC720C6C5F30049CA19 /* ScreenChar.m */; };
+		CF555ACC20C6C5F30049CA19 /* VT100.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AC820C6C5F30049CA19 /* VT100.m */; };
+		CF555AD320C6C5FE0049CA19 /* VT100Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555ACD20C6C5FD0049CA19 /* VT100Screen.m */; };
+		CF555AD420C6C5FE0049CA19 /* VT100ColorMap.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555ACE20C6C5FD0049CA19 /* VT100ColorMap.m */; };
+		CF555AD520C6C5FE0049CA19 /* VT100StringSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AD020C6C5FE0049CA19 /* VT100StringSupplier.m */; };
+		CF5BA54F20C6C61F0031A0F4 /* VT100Token.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5BA54D20C6C61E0031A0F4 /* VT100Token.m */; };
+		CF5BA55220C6C78C0031A0F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5BA55120C6C78C0031A0F4 /* UIKit.framework */; };
+		CF5BA55320C6C79E0031A0F4 /* VT100Terminal.m in Sources */ = {isa = PBXBuildFile; fileRef = CF555AD820C6C6050049CA19 /* VT100Terminal.m */; };
+		CF5BA55520C6C7E40031A0F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5BA55420C6C7E40031A0F4 /* main.m */; };
+		CF5BA55720C6C8010031A0F4 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5BA55620C6C8000031A0F4 /* libncurses.tbd */; };
+		CF7252D420C96889009F9007 /* bell-hud.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7252CC20C96888009F9007 /* bell-hud.png */; };
+		CF7D170420C97CB1004567C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7D170320C97CB1004567C2 /* Assets.xcassets */; };
+		CFA17ADA20C6C1DA009156E6 /* HBNTTabToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AD120C6C1D9009156E6 /* HBNTTabToolbar.m */; };
+		CFA17ADB20C6C1DA009156E6 /* HBNTTerminalController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AD220C6C1D9009156E6 /* HBNTTerminalController.m */; };
+		CFA17ADC20C6C1DA009156E6 /* HBNTSubProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AD320C6C1D9009156E6 /* HBNTSubProcess.m */; };
+		CFA17ADD20C6C1DA009156E6 /* HBNTTabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AD820C6C1DA009156E6 /* HBNTTabCollectionViewCell.m */; };
+		CFA17ADE20C6C1DA009156E6 /* HBNTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AD920C6C1DA009156E6 /* HBNTRootViewController.m */; };
+		CFA17AE720C6C1E8009156E6 /* HBNTTerminalSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17ADF20C6C1E7009156E6 /* HBNTTerminalSessionViewController.m */; };
+		CFA17AE820C6C1E8009156E6 /* HBNTTerminalTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AE020C6C1E7009156E6 /* HBNTTerminalTextView.m */; };
+		CFA17AE920C6C1E8009156E6 /* HBNTTerminalKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AE120C6C1E8009156E6 /* HBNTTerminalKeyInput.m */; };
+		CFA17AEA20C6C1E8009156E6 /* HBNTTextInputBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AE520C6C1E8009156E6 /* HBNTTextInputBase.m */; };
+		CFA17AEC20C6C1FD009156E6 /* HBNTHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17AEB20C6C1FD009156E6 /* HBNTHUDView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF061BE520C6C1B100529484 /* HBNTPTY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTPTY.m; sourceTree = "<group>"; };
+		CF061BE620C6C1B100529484 /* HBNTKeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTKeyboardButton.m; sourceTree = "<group>"; };
+		CF061BE720C6C1B100529484 /* HBNTKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTKeyboardToolbar.m; sourceTree = "<group>"; };
+		CF061BE820C6C1B100529484 /* HBNTPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTPreferences.h; sourceTree = "<group>"; };
+		CF061BE920C6C1B100529484 /* HBNTPreferencesRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTPreferencesRootController.h; sourceTree = "<group>"; };
+		CF061BEA20C6C1B200529484 /* HBNTKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTKeyboardToolbar.h; sourceTree = "<group>"; };
+		CF061BEB20C6C1B200529484 /* HBNTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTAppDelegate.h; sourceTree = "<group>"; };
+		CF061BEC20C6C1B200529484 /* HBNTPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTPreferences.m; sourceTree = "<group>"; };
+		CF061BED20C6C1B200529484 /* HBNTHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTHUDView.h; sourceTree = "<group>"; };
+		CF061BEE20C6C1B200529484 /* HBNTPTY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTPTY.h; sourceTree = "<group>"; };
+		CF061BEF20C6C1B200529484 /* HBNTPreferencesRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTPreferencesRootController.m; sourceTree = "<group>"; };
+		CF061BF020C6C1B200529484 /* HBNTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTAppDelegate.m; sourceTree = "<group>"; };
+		CF061BF120C6C1B200529484 /* HBNTKeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTKeyboardButton.h; sourceTree = "<group>"; };
+		CF1C07F420CA0AC200BA89EA /* UIColor+HBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HBAdditions.h"; path = "NewTermMarzipan/External/UIColor+HBAdditions.h"; sourceTree = SOURCE_ROOT; };
+		CF1C07F520CA0AC200BA89EA /* UIColor+HBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HBAdditions.m"; path = "NewTermMarzipan/External/UIColor+HBAdditions.m"; sourceTree = SOURCE_ROOT; };
+		CF1C07F720CA0AC800BA89EA /* ncurses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ncurses.h; path = NewTermMarzipan/External/ncurses/ncurses.h; sourceTree = SOURCE_ROOT; };
+		CF1C07F820CA0AC800BA89EA /* ncurses_dll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ncurses_dll.h; path = NewTermMarzipan/External/ncurses/ncurses_dll.h; sourceTree = SOURCE_ROOT; };
+		CF1C07F920CA0AC800BA89EA /* term.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = term.h; path = NewTermMarzipan/External/ncurses/term.h; sourceTree = SOURCE_ROOT; };
+		CF1C07FA20CA0AD100BA89EA /* CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompactConstraint.h; path = NewTermMarzipan/External/CompactConstraint/CompactConstraint.h; sourceTree = SOURCE_ROOT; };
+		CF1C07FB20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+CompactConstraint.h"; path = "NewTermMarzipan/External/CompactConstraint/NSLayoutConstraint+CompactConstraint.h"; sourceTree = SOURCE_ROOT; };
+		CF1C07FC20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+CompactConstraint.m"; path = "NewTermMarzipan/External/CompactConstraint/NSLayoutConstraint+CompactConstraint.m"; sourceTree = SOURCE_ROOT; };
+		CF1C07FD20CA0AD200BA89EA /* UIView+CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CompactConstraint.h"; path = "NewTermMarzipan/External/CompactConstraint/UIView+CompactConstraint.h"; sourceTree = SOURCE_ROOT; };
+		CF1C07FE20CA0AD200BA89EA /* UIView+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CompactConstraint.m"; path = "NewTermMarzipan/External/CompactConstraint/UIView+CompactConstraint.m"; sourceTree = SOURCE_ROOT; };
+		CF1C080120CA0B6200BA89EA /* bell-hud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell-hud@2x.png"; sourceTree = "<group>"; };
+		CF1C080220CA0B6200BA89EA /* bell-hud@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell-hud@3x.png"; sourceTree = "<group>"; };
+		CF1C080520CA0B6B00BA89EA /* Fonts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fonts.plist; sourceTree = "<group>"; };
+		CF1C080720CA0B7200BA89EA /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		CF1C080820CA0B7200BA89EA /* settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@3x.png"; sourceTree = "<group>"; };
+		CF1C080920CA0B7200BA89EA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		CF1C080D20CA0B7900BA89EA /* Themes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Themes.plist; sourceTree = "<group>"; };
+		CF1C081020CA0BF200BA89EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF1C081220CA0BF200BA89EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF22F9B31FFB97F7003175DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF37BF9320C6F34E00302776 /* Main.storyboardc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.storyboardc; path = Main.storyboardc; sourceTree = "<group>"; };
+		CF555ABC20C6C5EB0049CA19 /* FontMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontMetrics.m; sourceTree = "<group>"; };
+		CF555ABD20C6C5EB0049CA19 /* FontMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontMetrics.h; sourceTree = "<group>"; };
+		CF555ABE20C6C5EC0049CA19 /* charmaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = charmaps.h; path = "../../NewTerm-2.0b3/VT100/charmaps.h"; sourceTree = "<group>"; };
+		CF555ABF20C6C5EC0049CA19 /* iTermParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermParser.h; sourceTree = "<group>"; };
+		CF555AC020C6C5EC0049CA19 /* NSCharacterSet+iTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+iTerm.h"; sourceTree = "<group>"; };
+		CF555AC120C6C5ED0049CA19 /* NSCharacterSet+iTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+iTerm.m"; sourceTree = "<group>"; };
+		CF555AC420C6C5F20049CA19 /* ScreenChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenChar.h; sourceTree = "<group>"; };
+		CF555AC520C6C5F20049CA19 /* NSStringITerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringITerm.h; sourceTree = "<group>"; };
+		CF555AC620C6C5F20049CA19 /* NSStringITerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringITerm.m; sourceTree = "<group>"; };
+		CF555AC720C6C5F30049CA19 /* ScreenChar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenChar.m; sourceTree = "<group>"; };
+		CF555AC820C6C5F30049CA19 /* VT100.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VT100.m; sourceTree = "<group>"; };
+		CF555AC920C6C5F30049CA19 /* VT100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100.h; sourceTree = "<group>"; };
+		CF555ACD20C6C5FD0049CA19 /* VT100Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VT100Screen.m; sourceTree = "<group>"; };
+		CF555ACE20C6C5FD0049CA19 /* VT100ColorMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VT100ColorMap.m; sourceTree = "<group>"; };
+		CF555ACF20C6C5FD0049CA19 /* VT100StringSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100StringSupplier.h; sourceTree = "<group>"; };
+		CF555AD020C6C5FE0049CA19 /* VT100StringSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VT100StringSupplier.m; sourceTree = "<group>"; };
+		CF555AD120C6C5FE0049CA19 /* VT100Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100Screen.h; sourceTree = "<group>"; };
+		CF555AD220C6C5FE0049CA19 /* VT100ColorMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100ColorMap.h; sourceTree = "<group>"; };
+		CF555AD620C6C6050049CA19 /* VT100Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VT100Token.h; sourceTree = "<group>"; };
+		CF555AD720C6C6050049CA19 /* VT100Terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VT100Terminal.h; sourceTree = "<group>"; };
+		CF555AD820C6C6050049CA19 /* VT100Terminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VT100Terminal.m; sourceTree = "<group>"; };
+		CF5BA54D20C6C61E0031A0F4 /* VT100Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VT100Token.m; path = "../../NewTerm-2.0b3/VT100/VT100Token.m"; sourceTree = "<group>"; };
+		CF5BA54E20C6C61F0031A0F4 /* VT100Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100Types.h; sourceTree = "<group>"; };
+		CF5BA55120C6C78C0031A0F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../../../../../System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
+		CF5BA55420C6C7E40031A0F4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../../NewTerm-2.0b3/NewTerm/main.m"; sourceTree = "<group>"; };
+		CF5BA55620C6C8000031A0F4 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
+		CF7252CC20C96888009F9007 /* bell-hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bell-hud.png"; path = "NewTermMarzipan/bell-hud.png"; sourceTree = SOURCE_ROOT; };
+		CF736DA420C6E7BD00868B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF7D170320C97CB1004567C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFA17AD020C6C1D9009156E6 /* HBNTTabToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTabToolbar.h; sourceTree = "<group>"; };
+		CFA17AD120C6C1D9009156E6 /* HBNTTabToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTabToolbar.m; sourceTree = "<group>"; };
+		CFA17AD220C6C1D9009156E6 /* HBNTTerminalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTerminalController.m; sourceTree = "<group>"; };
+		CFA17AD320C6C1D9009156E6 /* HBNTSubProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTSubProcess.m; sourceTree = "<group>"; };
+		CFA17AD420C6C1D9009156E6 /* HBNTSubProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTSubProcess.h; sourceTree = "<group>"; };
+		CFA17AD520C6C1D9009156E6 /* HBNTTabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTabCollectionViewCell.h; sourceTree = "<group>"; };
+		CFA17AD620C6C1DA009156E6 /* HBNTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTRootViewController.h; sourceTree = "<group>"; };
+		CFA17AD720C6C1DA009156E6 /* HBNTTerminalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTerminalController.h; sourceTree = "<group>"; };
+		CFA17AD820C6C1DA009156E6 /* HBNTTabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTabCollectionViewCell.m; sourceTree = "<group>"; };
+		CFA17AD920C6C1DA009156E6 /* HBNTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTRootViewController.m; sourceTree = "<group>"; };
+		CFA17ADF20C6C1E7009156E6 /* HBNTTerminalSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTerminalSessionViewController.m; sourceTree = "<group>"; };
+		CFA17AE020C6C1E7009156E6 /* HBNTTerminalTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTerminalTextView.m; sourceTree = "<group>"; };
+		CFA17AE120C6C1E8009156E6 /* HBNTTerminalKeyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTTerminalKeyInput.m; sourceTree = "<group>"; };
+		CFA17AE220C6C1E8009156E6 /* HBNTTerminalSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTerminalSessionViewController.h; sourceTree = "<group>"; };
+		CFA17AE320C6C1E8009156E6 /* HBNTTerminalTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTerminalTextView.h; sourceTree = "<group>"; };
+		CFA17AE420C6C1E8009156E6 /* HBNTTerminalKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTerminalKeyInput.h; sourceTree = "<group>"; };
+		CFA17AE520C6C1E8009156E6 /* HBNTTextInputBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HBNTTextInputBase.m; path = "../../NewTerm-2.0b3/NewTerm/HBNTTextInputBase.m"; sourceTree = "<group>"; };
+		CFA17AE620C6C1E8009156E6 /* HBNTTextInputBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNTTextInputBase.h; sourceTree = "<group>"; };
+		CFA17AEB20C6C1FD009156E6 /* HBNTHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNTHUDView.m; sourceTree = "<group>"; };
+		CFCAA2E720C6BA0300EFCAFE /* NewTermMarzipan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTermMarzipan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCAA2F320C6BA0300EFCAFE /* NewTermMarzipan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewTermMarzipan.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFCAA2E420C6BA0300EFCAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5BA55720C6C8010031A0F4 /* libncurses.tbd in Frameworks */,
+				CF5BA55220C6C78C0031A0F4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF22F9A81FFB97F7003175DE = {
+			isa = PBXGroup;
+			children = (
+				CF22F9B31FFB97F7003175DE /* README.md */,
+				CFCAA2E820C6BA0300EFCAFE /* NewTermMarzipan */,
+				CFCAA2E720C6BA0300EFCAFE /* NewTermMarzipan.app */,
+				CF5BA55020C6C78C0031A0F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF555AB820C6C4280049CA19 /* Cephei */ = {
+			isa = PBXGroup;
+			children = (
+				CF1C07F420CA0AC200BA89EA /* UIColor+HBAdditions.h */,
+				CF1C07F520CA0AC200BA89EA /* UIColor+HBAdditions.m */,
+			);
+			name = Cephei;
+			sourceTree = "<group>";
+		};
+		CF5BA55020C6C78C0031A0F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF5BA55620C6C8000031A0F4 /* libncurses.tbd */,
+				CF5BA55120C6C78C0031A0F4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCAA2E820C6BA0300EFCAFE /* NewTermMarzipan */ = {
+			isa = PBXGroup;
+			children = (
+				CF1C080F20CA0BF200BA89EA /* InfoPlist.strings */,
+				CF1C081120CA0BF200BA89EA /* Localizable.strings */,
+				CF7252CC20C96888009F9007 /* bell-hud.png */,
+				CF1C080120CA0B6200BA89EA /* bell-hud@2x.png */,
+				CF1C080220CA0B6200BA89EA /* bell-hud@3x.png */,
+				CF1C080520CA0B6B00BA89EA /* Fonts.plist */,
+				CF1C080920CA0B7200BA89EA /* settings.png */,
+				CF1C080720CA0B7200BA89EA /* settings@2x.png */,
+				CF1C080820CA0B7200BA89EA /* settings@3x.png */,
+				CF1C080D20CA0B7900BA89EA /* Themes.plist */,
+				CF5BA55420C6C7E40031A0F4 /* main.m */,
+				CF061BEB20C6C1B200529484 /* HBNTAppDelegate.h */,
+				CF061BF020C6C1B200529484 /* HBNTAppDelegate.m */,
+				CF061BED20C6C1B200529484 /* HBNTHUDView.h */,
+				CFA17AEB20C6C1FD009156E6 /* HBNTHUDView.m */,
+				CF061BF120C6C1B200529484 /* HBNTKeyboardButton.h */,
+				CF061BE620C6C1B100529484 /* HBNTKeyboardButton.m */,
+				CF061BEA20C6C1B200529484 /* HBNTKeyboardToolbar.h */,
+				CF061BE720C6C1B100529484 /* HBNTKeyboardToolbar.m */,
+				CF061BE820C6C1B100529484 /* HBNTPreferences.h */,
+				CF061BEC20C6C1B200529484 /* HBNTPreferences.m */,
+				CF061BE920C6C1B100529484 /* HBNTPreferencesRootController.h */,
+				CF061BEF20C6C1B200529484 /* HBNTPreferencesRootController.m */,
+				CF061BEE20C6C1B200529484 /* HBNTPTY.h */,
+				CF061BE520C6C1B100529484 /* HBNTPTY.m */,
+				CFA17AD620C6C1DA009156E6 /* HBNTRootViewController.h */,
+				CFA17AD920C6C1DA009156E6 /* HBNTRootViewController.m */,
+				CFA17AD420C6C1D9009156E6 /* HBNTSubProcess.h */,
+				CFA17AD320C6C1D9009156E6 /* HBNTSubProcess.m */,
+				CFA17AD520C6C1D9009156E6 /* HBNTTabCollectionViewCell.h */,
+				CFA17AD820C6C1DA009156E6 /* HBNTTabCollectionViewCell.m */,
+				CFA17AD020C6C1D9009156E6 /* HBNTTabToolbar.h */,
+				CFA17AD120C6C1D9009156E6 /* HBNTTabToolbar.m */,
+				CFA17AD720C6C1DA009156E6 /* HBNTTerminalController.h */,
+				CFA17AD220C6C1D9009156E6 /* HBNTTerminalController.m */,
+				CFA17AE420C6C1E8009156E6 /* HBNTTerminalKeyInput.h */,
+				CFA17AE120C6C1E8009156E6 /* HBNTTerminalKeyInput.m */,
+				CFA17AE220C6C1E8009156E6 /* HBNTTerminalSessionViewController.h */,
+				CFA17ADF20C6C1E7009156E6 /* HBNTTerminalSessionViewController.m */,
+				CFA17AE320C6C1E8009156E6 /* HBNTTerminalTextView.h */,
+				CFA17AE020C6C1E7009156E6 /* HBNTTerminalTextView.m */,
+				CFA17AE620C6C1E8009156E6 /* HBNTTextInputBase.h */,
+				CFA17AE520C6C1E8009156E6 /* HBNTTextInputBase.m */,
+				CF555ABE20C6C5EC0049CA19 /* charmaps.h */,
+				CF555ABD20C6C5EB0049CA19 /* FontMetrics.h */,
+				CF555ABC20C6C5EB0049CA19 /* FontMetrics.m */,
+				CF555ABF20C6C5EC0049CA19 /* iTermParser.h */,
+				CF555AC020C6C5EC0049CA19 /* NSCharacterSet+iTerm.h */,
+				CF555AC120C6C5ED0049CA19 /* NSCharacterSet+iTerm.m */,
+				CF555AC520C6C5F20049CA19 /* NSStringITerm.h */,
+				CF555AC620C6C5F20049CA19 /* NSStringITerm.m */,
+				CF555AC420C6C5F20049CA19 /* ScreenChar.h */,
+				CF555AC720C6C5F30049CA19 /* ScreenChar.m */,
+				CF555AC920C6C5F30049CA19 /* VT100.h */,
+				CF555AC820C6C5F30049CA19 /* VT100.m */,
+				CF555AD220C6C5FE0049CA19 /* VT100ColorMap.h */,
+				CF555ACE20C6C5FD0049CA19 /* VT100ColorMap.m */,
+				CF555AD120C6C5FE0049CA19 /* VT100Screen.h */,
+				CF555ACD20C6C5FD0049CA19 /* VT100Screen.m */,
+				CF555ACF20C6C5FD0049CA19 /* VT100StringSupplier.h */,
+				CF555AD020C6C5FE0049CA19 /* VT100StringSupplier.m */,
+				CF555AD720C6C6050049CA19 /* VT100Terminal.h */,
+				CF555AD820C6C6050049CA19 /* VT100Terminal.m */,
+				CF555AD620C6C6050049CA19 /* VT100Token.h */,
+				CF5BA54D20C6C61E0031A0F4 /* VT100Token.m */,
+				CF5BA54E20C6C61F0031A0F4 /* VT100Types.h */,
+				CFCAA32E20C6BB4700EFCAFE /* External */,
+				CFCAA2F320C6BA0300EFCAFE /* NewTermMarzipan.entitlements */,
+				CF736DA420C6E7BD00868B51 /* Info.plist */,
+				CF37BF9320C6F34E00302776 /* Main.storyboardc */,
+				CF7D170320C97CB1004567C2 /* Assets.xcassets */,
+			);
+			path = NewTermMarzipan;
+			sourceTree = "<group>";
+		};
+		CFCAA32E20C6BB4700EFCAFE /* External */ = {
+			isa = PBXGroup;
+			children = (
+				CF555AB820C6C4280049CA19 /* Cephei */,
+				CFCAA32F20C6BB4700EFCAFE /* ncurses */,
+				CFCAA33320C6BB4700EFCAFE /* CompactConstraint */,
+			);
+			name = External;
+			path = NewTerm/External;
+			sourceTree = SOURCE_ROOT;
+		};
+		CFCAA32F20C6BB4700EFCAFE /* ncurses */ = {
+			isa = PBXGroup;
+			children = (
+				CF1C07F820CA0AC800BA89EA /* ncurses_dll.h */,
+				CF1C07F720CA0AC800BA89EA /* ncurses.h */,
+				CF1C07F920CA0AC800BA89EA /* term.h */,
+			);
+			path = ncurses;
+			sourceTree = "<group>";
+		};
+		CFCAA33320C6BB4700EFCAFE /* CompactConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				CF1C07FA20CA0AD100BA89EA /* CompactConstraint.h */,
+				CF1C07FB20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.h */,
+				CF1C07FC20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.m */,
+				CF1C07FD20CA0AD200BA89EA /* UIView+CompactConstraint.h */,
+				CF1C07FE20CA0AD200BA89EA /* UIView+CompactConstraint.m */,
+			);
+			path = CompactConstraint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		CF22F9C01FFB98A5003175DE /* NewTerm */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "do THEOS_DEVICE_IP=local XCODE=1 THEOS=/Users/kirb/theos";
+			buildConfigurationList = CF22F9C11FFB98A5003175DE /* Build configuration list for PBXLegacyTarget "NewTerm" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = NewTerm;
+			passBuildSettingsInEnvironment = 0;
+			productName = NewTerm;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		CFCAA2E620C6BA0300EFCAFE /* NewTermMarzipan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCAA31020C6BA0400EFCAFE /* Build configuration list for PBXNativeTarget "NewTermMarzipan" */;
+			buildPhases = (
+				CFCAA2E320C6BA0300EFCAFE /* Sources */,
+				CFCAA2E420C6BA0300EFCAFE /* Frameworks */,
+				CFCAA2E520C6BA0300EFCAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTermMarzipan;
+			productName = NewTermMarzipan;
+			productReference = CFCAA2E720C6BA0300EFCAFE /* NewTermMarzipan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF22F9A91FFB97F7003175DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 0910;
+				TargetAttributes = {
+					CF22F9C01FFB98A5003175DE = {
+						CreatedOnToolsVersion = 9.1;
+					};
+					CFCAA2E620C6BA0300EFCAFE = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF22F9AC1FFB97F7003175DE /* Build configuration list for PBXProject "NewTerm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF22F9A81FFB97F7003175DE;
+			productRefGroup = CF22F9A81FFB97F7003175DE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF22F9C01FFB98A5003175DE /* NewTerm */,
+				CFCAA2E620C6BA0300EFCAFE /* NewTermMarzipan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFCAA2E520C6BA0300EFCAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1C080C20CA0B7200BA89EA /* settings.png in Resources */,
+				CF1C081320CA0BF200BA89EA /* InfoPlist.strings in Resources */,
+				CF7252D420C96889009F9007 /* bell-hud.png in Resources */,
+				CF7D170420C97CB1004567C2 /* Assets.xcassets in Resources */,
+				CF1C080620CA0B6B00BA89EA /* Fonts.plist in Resources */,
+				CF1C080320CA0B6300BA89EA /* bell-hud@2x.png in Resources */,
+				CF1C080A20CA0B7200BA89EA /* settings@2x.png in Resources */,
+				CF1C080E20CA0B7900BA89EA /* Themes.plist in Resources */,
+				CF1C081420CA0BF200BA89EA /* Localizable.strings in Resources */,
+				CF1C080420CA0B6300BA89EA /* bell-hud@3x.png in Resources */,
+				CF1C080B20CA0B7200BA89EA /* settings@3x.png in Resources */,
+				CF37BF9420C6F34E00302776 /* Main.storyboardc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFCAA2E320C6BA0300EFCAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF555AC320C6C5ED0049CA19 /* NSCharacterSet+iTerm.m in Sources */,
+				CF061BF620C6C1B200529484 /* HBNTPreferencesRootController.m in Sources */,
+				CF5BA54F20C6C61F0031A0F4 /* VT100Token.m in Sources */,
+				CF5BA55320C6C79E0031A0F4 /* VT100Terminal.m in Sources */,
+				CF1C080020CA0AD200BA89EA /* UIView+CompactConstraint.m in Sources */,
+				CF555AD320C6C5FE0049CA19 /* VT100Screen.m in Sources */,
+				CFA17ADD20C6C1DA009156E6 /* HBNTTabCollectionViewCell.m in Sources */,
+				CF061BF320C6C1B200529484 /* HBNTKeyboardButton.m in Sources */,
+				CF555ACA20C6C5F30049CA19 /* NSStringITerm.m in Sources */,
+				CF5BA55520C6C7E40031A0F4 /* main.m in Sources */,
+				CF061BF720C6C1B200529484 /* HBNTAppDelegate.m in Sources */,
+				CF555AD520C6C5FE0049CA19 /* VT100StringSupplier.m in Sources */,
+				CF061BF420C6C1B200529484 /* HBNTKeyboardToolbar.m in Sources */,
+				CFA17AEC20C6C1FD009156E6 /* HBNTHUDView.m in Sources */,
+				CFA17AEA20C6C1E8009156E6 /* HBNTTextInputBase.m in Sources */,
+				CF1C07F620CA0AC200BA89EA /* UIColor+HBAdditions.m in Sources */,
+				CF555AD420C6C5FE0049CA19 /* VT100ColorMap.m in Sources */,
+				CF1C07FF20CA0AD200BA89EA /* NSLayoutConstraint+CompactConstraint.m in Sources */,
+				CF061BF220C6C1B200529484 /* HBNTPTY.m in Sources */,
+				CFA17AE720C6C1E8009156E6 /* HBNTTerminalSessionViewController.m in Sources */,
+				CFA17AE820C6C1E8009156E6 /* HBNTTerminalTextView.m in Sources */,
+				CFA17ADE20C6C1DA009156E6 /* HBNTRootViewController.m in Sources */,
+				CF555ACB20C6C5F30049CA19 /* ScreenChar.m in Sources */,
+				CF555AC220C6C5ED0049CA19 /* FontMetrics.m in Sources */,
+				CFA17ADA20C6C1DA009156E6 /* HBNTTabToolbar.m in Sources */,
+				CFA17ADC20C6C1DA009156E6 /* HBNTSubProcess.m in Sources */,
+				CFA17AE920C6C1E8009156E6 /* HBNTTerminalKeyInput.m in Sources */,
+				CF555ACC20C6C5F30049CA19 /* VT100.m in Sources */,
+				CF061BF520C6C1B200529484 /* HBNTPreferences.m in Sources */,
+				CFA17ADB20C6C1DA009156E6 /* HBNTTerminalController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF1C080F20CA0BF200BA89EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1C081020CA0BF200BA89EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF1C081120CA0BF200BA89EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1C081220CA0BF200BA89EA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF22F9AA1FFB97F7003175DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CF22F9AB1FFB97F7003175DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		CF22F9C21FFB98A5003175DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 1.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF22F9C31FFB98A5003175DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 1.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CFCAA30A20C6BA0300EFCAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = NewTermMarzipan/NewTermMarzipan.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y9Z46WEJ27;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /System/iOSSupport/System/Library/Frameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					NewTerm,
+					NewTerm/External,
+				);
+				INFOPLIST_FILE = NewTermMarzipan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DIS_IPAD=1",
+					"-Wno-expansion-to-defined",
+					"-Wno-documentation",
+					"-Wno-strict-prototypes",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.NewTermMarzipan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CFCAA30B20C6BA0300EFCAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = NewTermMarzipan/NewTermMarzipan.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y9Z46WEJ27;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /System/iOSSupport/System/Library/Frameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					NewTerm,
+					NewTerm/External,
+				);
+				INFOPLIST_FILE = NewTermMarzipan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-DIS_IPAD=1",
+					"-Wno-expansion-to-defined",
+					"-Wno-documentation",
+					"-Wno-strict-prototypes",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.NewTermMarzipan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF22F9AC1FFB97F7003175DE /* Build configuration list for PBXProject "NewTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF22F9AA1FFB97F7003175DE /* Debug */,
+				CF22F9AB1FFB97F7003175DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF22F9C11FFB98A5003175DE /* Build configuration list for PBXLegacyTarget "NewTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF22F9C21FFB98A5003175DE /* Debug */,
+				CF22F9C31FFB98A5003175DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCAA31020C6BA0400EFCAFE /* Build configuration list for PBXNativeTarget "NewTermMarzipan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCAA30A20C6BA0300EFCAFE /* Debug */,
+				CFCAA30B20C6BA0300EFCAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF22F9A91FFB97F7003175DE /* Project object */;
+}
